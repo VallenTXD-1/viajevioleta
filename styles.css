@@ -64,15 +64,14 @@
                 width: 100%;
             }
         }
-        /* Center and justify paragraphs */
+        
         .centered-justified {
-            text-align: center; /* Centers the text */
-            text-justify: inter-word; /* Justifies the text */
-            margin: 0 auto; /* Centers the block element horizontally */
-            max-width: 800px; /* Limits the paragraph width for better readability */
+            text-align: center; 
+            text-justify: inter-word; 
+            margin: 0 auto; 
+            max-width: 800px;
         }
     
-        /* Make hyperlinks pink and visible even after clicking */
         a {
             color: pink;
             text-decoration: none; /* Removes the underline */
@@ -84,7 +83,7 @@
         }
     
         a:hover {
-            text-decoration: underline; /* Adds underline on hover */
+            text-decoration: underline;
         }
     
     </style>
