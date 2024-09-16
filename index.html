@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaje Violeta - Ale</title>
+
+    <!-- Meta description for SEO -->
+    <meta name="description" content="Viaja cómoda y segura con Ale, tu conductora de confianza.">
+
+    <!-- External CSS (styles.css) -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General page styling */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+        }
+
+        header {
+            background-color: #7D3C98;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        form {
+            margin: 0 auto;
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+        }
+
+        form input, form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+
+        form button {
+            background-color: #7D3C98;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #5b2970;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        /* Heart animation styling */
+        .heart-animation {
+            width: 100px;
+            margin: 20px auto;
+        }
+
+        .confirmation {
+            color: #7D3C98;
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        .image-section {
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Phone link styling */
+        .contact-phone {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .contact-phone a {
+            color: #7D3C98;
+            text-decoration: none;
+        }
+
+        .contact-phone a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Viaje Violeta 👑</h1>
+        <p>Tu conductora de confianza</p>
+    </header>
+
+    <main>
+        <h2>Registra tus datos para una mejor atención</h2>
+        <!-- Formulario para los datos del cliente -->
+        <form id="contactForm">
+            <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
+            <input type="text" id="lastName" name="lastName" placeholder="Apellido" required>
+            <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
+            <button type="submit">Enviar</button>
+        </form>
+
+        <!-- Elementos ocultos para la animación de corazón y mensaje de confirmación -->
+        <img src="A_small_animated_GIF_of_a_red_beating_heart,_repre.png" alt="Animación de Corazón" class="heart-animation hidden" id="heartAnimation">
+        <p class="confirmation hidden" id="confirmationMessage">Gracias por contactarme, me pondré en contacto en breve, ¡adiós! ❤️</p>
+
+        <!-- Sección de contacto con enlace para llamar o enviar SMS -->
+        <div class="contact-phone">
+            <p>Llámame o envíame un SMS: <a href="tel:+52811886">+52 811886</a></p>
+        </div>
+
+        <!-- Sección de imágenes -->
+        <div class="image-section">
+            <h3>Amigas, servicio privado y discreto</h3>
+            <img src="images/01.jpg" alt="Amigas, servicio privado y discreto para mujeres">
+        </div>
+
+        <div class="image-section">
+            <h3>Mi Nave, cómoda y discreta</h3>
+            <img src="images/02.jpg" alt="Coche limpio, cómodo y discreto">
+        </div>
+    </main>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita el envío del formulario
+
+            // Muestra la animación del corazón y el mensaje de confirmación
+            document.getElementById('heartAnimation').classList.remove('hidden');
+            document.getElementById('confirmationMessage').classList.remove('hidden');
+
+            // Oculta el formulario después del envío
+            document.getElementById('contactForm').classList.add('hidden');
+
+            // Simulación de envío de SMS (puedes reemplazar esto con funcionalidad real de SMS)
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var phone = document.getElementById('phone').value;
+            var email = document.getElementById('email').value;
+
+            var message = `Nombre: ${firstName}, Apellido: ${lastName}, Teléfono: ${phone}, Email: ${email}`;
+            console.log("Enviando SMS con el mensaje:", message);
+
+            // Aquí se implementaría la funcionalidad real de envío de SMS (por ejemplo, usando Twilio)
+        });
+    </script>
+</body>
+</html>

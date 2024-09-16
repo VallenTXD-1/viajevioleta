@@ -1,0 +1,90 @@
+    <style>
+        /* General body styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Basic layout styles */
+        header, footer {
+            background-color: #370277;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        /* Flexbox for layout scalability */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            width: 30%;
+            margin: 10px;
+            padding: 20px;
+        }
+
+        /* Responsive images */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Buttons styling */
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #ff00b7;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media queries for responsive design */
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+            }
+        }
+        /* Center and justify paragraphs */
+        .centered-justified {
+            text-align: center; /* Centers the text */
+            text-justify: inter-word; /* Justifies the text */
+            margin: 0 auto; /* Centers the block element horizontally */
+            max-width: 800px; /* Limits the paragraph width for better readability */
+        }
+    
+        /* Make hyperlinks pink and visible even after clicking */
+        a {
+            color: pink;
+            text-decoration: none; /* Removes the underline */
+        }
+    
+        /* Ensure links stay pink even after being clicked */
+        a:visited {
+            color: pink;
+        }
+    
+        a:hover {
+            text-decoration: underline; /* Adds underline on hover */
+        }
+    
+    </style>
