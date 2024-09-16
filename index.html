@@ -115,8 +115,8 @@
 
     <main>
         <h2>Registra tus datos para una mejor atención</h2>
-        <!-- Formulario para los datos del cliente -->
-        <form id="contactForm">
+        <!-- Formulario para los datos del cliente con action para Formspree -->
+        <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
             <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
             <input type="text" id="lastName" name="lastName" placeholder="Apellido" required>
             <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
@@ -124,10 +124,8 @@
             <button type="submit">Enviar</button>
         </form>
 
-
         <img src="image.webp" alt="Corazón" class="heart-animation hidden" id="heartAnimation">
         <p class="confirmation hidden" id="confirmationMessage">💜 Gracias, me pondré en contacto en breve, ¡Bye! 💜</p>
-
 
         <div class="contact-phone">
             <p>Llámame o envíame un SMS: <a href="tel:+528118860099">+52 8118860099</a></p>
@@ -155,15 +153,6 @@
 
             // Oculta el formulario después del envío
             document.getElementById('contactForm').classList.add('hidden');
-
-            // Simulación de envío de SMS (puedes reemplazar esto con funcionalidad real de SMS)
-            var firstName = document.getElementById('firstName').value;
-            var lastName = document.getElementById('lastName').value;
-            var phone = document.getElementById('phone').value;
-            var email = document.getElementById('email').value;
-
-            var message = `Nombre: ${firstName}, Apellido: ${lastName}, Teléfono: ${phone}, Email: ${email}`;
-            console.log("Enviando SMS con el mensaje:", message);
 
         });
     </script>
