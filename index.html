@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <style>
-
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
@@ -47,11 +46,11 @@
 
         form input, form button {
             width: 100%;
-            padding: 10px;
+            padding: 15px;  /* Increased padding for mobile-friendly inputs */
             margin: 10px 0;
             border: 1px solid #ccc;
             border-radius: 4px;
-            font-size: 1em;
+            font-size: 1.1em;  /* Slightly larger font for mobile readability */
         }
 
         form button {
@@ -119,7 +118,7 @@
         <form id="contactForm" action="https://formspree.io/f/mvgpnvev" method="POST">
             <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
             <input type="text" id="lastName" name="lastName" placeholder="Apellido" required>
-            <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
+            <input type="tel" id="phone" name="phone" placeholder="Teléfono" pattern="[0-9]{10}" required> <!-- Mobile-friendly input for phone -->
             <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
             <button type="submit">Enviar</button>
         </form>
@@ -145,15 +144,13 @@
 
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(event) {
-            event.preventDefault(); // Evita el envío del formulario
-
+            // Allow the form to be submitted as usual
             // Muestra la animación del corazón y el mensaje de confirmación
             document.getElementById('heartAnimation').classList.remove('hidden');
             document.getElementById('confirmationMessage').classList.remove('hidden');
 
             // Oculta el formulario después del envío
             document.getElementById('contactForm').classList.add('hidden');
-
         });
     </script>
 </body>
