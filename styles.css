@@ -42,6 +42,7 @@ body {
 
 #navbar li {
     display: inline;
+    color: pink;
 }
 
 #navbar a {
