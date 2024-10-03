@@ -19,6 +19,8 @@ body{
     font-size: 35px;
     max-width: 100%;
     overflow: hidden;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 #navbar {
