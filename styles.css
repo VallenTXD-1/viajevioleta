@@ -21,7 +21,7 @@ body {
     max-width: 100%;
     overflow: hidden;
     text-align: center;
-    white-space: nowrap; /* Ensures the text fits in one row */
+    white-space: nowrap;
 }
 
 #navbar {
@@ -119,6 +119,6 @@ body {
         float: none;
     }
     #main-header {
-        font-size: 18px; /* Adjust font size for mobile */
+        font-size: 18px;
     }
 }
