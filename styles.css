@@ -1,4 +1,4 @@
-body{
+body {
     background-color: #ed9bf7;
     color: #555;
     font-family: Arial, Helvetica, sans-serif;
@@ -6,6 +6,7 @@ body{
     line-height: 1.6em;
     margin: 0;
 }
+
 .container {
     width: 80%;
     margin: auto;
@@ -19,6 +20,8 @@ body{
     font-size: 25px;
     max-width: 100%;
     overflow: hidden;
+    text-align: center;
+    white-space: nowrap; /* Ensures the text fits in one row */
 }
 
 #navbar {
@@ -26,10 +29,10 @@ body{
     color: #fff;
     display: flex;
     align-content: space-around;
+}
 
-    p {
-        color: #ed9bf7;
-    }
+#navbar p {
+    color: #ed9bf7;
 }
 
 #navbar ul {
@@ -38,17 +41,17 @@ body{
 }
 
 #navbar li {
-    display:inline;
+    display: inline;
 }
 
-#navbar a{
-    color:#fff;
+#navbar a {
+    color: #fff;
     text-decoration: none;
     font-size: 18px;
     padding-right: 15px;
 }
 
-#showcase{
+#showcase {
     background-image: url("background.png");
     background-position: center right;
     background-size: cover;
@@ -57,7 +60,7 @@ body{
     text-align: center;
 }
 
-#showcase h1{
+#showcase h1 {
     color: #fbf2fc;
     font-size: 50px;
     line-height: 1.6em;
@@ -85,35 +88,37 @@ body{
     align-items: center;
     border-radius: 15px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;s
-    a{ 
-      color: #7e098e;
-      font-size: 20px;  
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
-    }
-
-
+    font-size: 18px;
 }
 
-#main-footer{
+#sidebar a {
+    color: #7e098e;
+    font-size: 20px;
+}
+
+#sidebar img {
+    max-width: 100%;
+    height: auto;
+}
+
+#main-footer {
     background-color: rgb(161, 16, 223);
     color: #fdeefa;
     text-align: center;
     padding: 20px;
     margin-top: 40px;
-} 
+}
 
-@media(max-width:600px){
-    #main{
+@media (max-width: 600px) {
+    #main {
         width: 100%;
-        float:none;
+        float: none;
     }
-    #sidebar{
+    #sidebar {
         width: 100%;
-        float:none;
+        float: none;
+    }
+    #main-header {
+        font-size: 18px; /* Adjust font size for mobile */
     }
 }
