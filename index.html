@@ -1,64 +1,66 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
-    <title>Viaje Violeta - Ale</title>
-    <link rel="icon" href="images/html_logo_300x300.png">
-    <meta name="description" content="Viaja cómoda y segura con Ale, tu conductora de confianza.">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viaja con Ale</title>
+    <link rel="icon" href="images/heart.jpeg">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Viaje Violeta 👑</h1>
-        <h2>¡Hola! soy Ale, tu conductora de confianza</h2><img src="fusion-removebg-preview.png" alt="car" class="image-right" width="280" height="140">
-    </header>
-    <main>
-    <div class="contact-phone">
-        <h2>Llámame o guarda mi número: <a href="tel:+528118860099">+52 8118860099 💜</a></h2>
-    </div>
-    
-
-        <form id="contactForm" action="https://formspree.io/f/mvgpnvev" method="POST">
-            <input type="text" id="firstName" name="firstName" placeholder="Nombre" required>
-            <input type="text" id="lastName" name="lastName" placeholder="Apellido" required>
-            <input type="tel" id="phone" name="phone" placeholder="Teléfono" required>
-            <input type="email" id="email" name="email" placeholder="Correo electrónico" required>
-            <button type="submit">Enviar</button>
-        </form>
-        <h2>Registra tus datos para una mejor atención, (opcional)</h2>
-        <p class="confirmation hidden" id="confirmationMessage">💜 Gracias, ¡Bye! 💜</p>
-
-
-        <div class="image-container">
-            <div class="image-section left">
-                <h3>Amigas, servicio privado y sólo para mujeres</h3>
-                <img src="01.jpg" alt="Amigas, servicio privado y sólo para mujeres" width="600" height="500">
+    <header id="main-header">
+        <div class="container">
+            <h1>Viaje Violeta 👑</h1>
             </div>
+        </header>
         
-            <div class="image-section right">
-                <h3>Mi Nave, cómoda y discreta</h3>
-                <img src="02.jpg" alt="Coche limpio, cómodo y discreto" width="600" height="600">
+        <nav id="navbar">
+            <div class="container">
+                <p>Conoce Monterrey</p>
+                <ul>
+                    <li><a href="https://maps.app.goo.gl/iRYCj1C4XSQGuXyZ9">Fundidora</a></li>
+                    <li><a href="https://maps.app.goo.gl/RcSTwnrsGvrFuRNTA">Barrio Antiguo</a></li>
+                    <li><a href="https://maps.app.goo.gl/C8EVf8mtwzm4P95P8">Macroplaza</a></li>
+                    <li><a href="https://maps.app.goo.gl/svGLmvqH5YBs31NP6">Fashion Drive</a></li>
+                    <li><a href="https://maps.app.goo.gl/2Q1BquXqMrnzqRYy8">Tec de Monterrey</a></li>
+                </ul>            
             </div>
+        </nav>
+
+        <section id="showcase">
+            <div class="container">
+                <h1>Hola soy Ale! tu conductora de confianza, guarda mi número y reserva tu viaje.</h1>
+            </div>
+        </section>
+
+
+        <div class="container">
+                <section id="main">
+                    <h1>Mi visión,</h1>
+                    <p>Como mujer y madre, sé lo importante que es contar con un transporte <strong><em>seguro y confiable</em></strong>. Ya sea que estés de visita en <strong> Monterrey</strong>, necesites ir o venir del <strong>aeropuerto</strong>, asistir a un concierto en <strong>Fundidora</strong>, disfrutar de una noche de fiesta, o simplemente te preocupe que tus hijos usen el transporte público, estoy aquí para ayudarte. Cuéntame qué necesitas y juntos encontraremos la solución de chofer privado que mejor se ajuste a tus necesidades.</p>
+                    <p>Mi auto es un espacio libre de tabaco, limpio y cómodo para que disfrutes tu viaje.</p>
+                    <p>Será un gusto atenderte.</p>
+                    <p>Ale.</p>
+                </section>
+
+
+                <aside id="sidebar">
+                    <a href="tel:+528118860099"><strong>+52 811 886 0099</strong></a>
+                    <img src="images/02.jpg" alt="car">
+                    <blockquote>Llama o mándame Whatsapp </blockquote>
+                    <img src="images/whatsa.png" alt="whats" width="50" height="50">
+                </aside>
+        
+                
+
+            
         </div>
+
+        <footer id="main-footer">
+            <p>Copyright &copy; 2024; ViajeVioleta</p>
+        </footer>
+
+
     
-    </main>
-
-    <script>
-        document.getElementById('contactForm').addEventListener('submit', function(event) {
-            // Remove the preventDefault to allow the form to be submitted
-            // event.preventDefault(); // Evita el envío del formulario
-
-            // Muestra la animación del corazón y el mensaje de confirmación
-            document.getElementById('heartAnimation').classList.remove('hidden');
-            document.getElementById('confirmationMessage').classList.remove('hidden');
-
-            // Oculta el formulario después del envío
-            document.getElementById('contactForm').classList.add('hidden');
-        });
-    </script>
 </body>
 </html>
