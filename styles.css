@@ -49,7 +49,7 @@ body{
 }
 
 #showcase{
-    background-image: url('../images/background.png');
+    background-image: url('../background.png');
     background-position: center right;
     background-size: cover;
     min-height: 300px;
