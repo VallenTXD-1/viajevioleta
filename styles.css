@@ -16,6 +16,7 @@ body{
 #main-header {
     background-color: rgb(161, 16, 223); 
     color: #fff;
+    font-size: 25px;
     max-width: 100%;
     overflow: hidden;
 }
