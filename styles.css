@@ -16,7 +16,7 @@ body{
 #main-header {
     background-color: rgb(161, 16, 223); 
     color: #fff;
-    font-size: 10px;
+    font-size: 25px;
     max-width: 100%;
     overflow: hidden;
 }
@@ -59,7 +59,7 @@ body{
 
 #showcase h1{
     color: #fbf2fc;
-    font-size: 15px;
+    font-size: 25px;
     line-height: 1.6em;
     padding-top: 30px;
     align-items: center;
