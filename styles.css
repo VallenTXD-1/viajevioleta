@@ -1,140 +1,121 @@
-body {
-    font-family: 'Roboto', sans-serif;
+body{
+    background-color: #ed9bf7;
+    color: #555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6em;
     margin: 0;
-    padding: 0;
-    background-color: #f7f7f7;
 }
-
-header {
-    background-color: #7D3C98;
-    color: white;
-    padding: 20px;
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
     text-align: center;
 }
 
-h1 {
-    font-size: 2.5em;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-form {
-    margin: 0 auto;
-    max-width: 500px;
-    padding: 10px 50px 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-}
-
-form input, form button {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1em;
-}
-
-form button {
-    background-color: #7D3C98;
-    color: white;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-form button:hover {
-    background-color: #5b2970;
-}
-
-.hidden {
-    display: none;
-}
-
-.heart-animation {
-    width: 100px;
-    margin: 20px auto;
-}
-
-.confirmation {
-    color: #7D3C98;
-    font-size: 1.5em;
-    margin-top: 20px;
-}
-
-.image-section {
-    margin: 20px 0;
-    text-align: center;
-}
-
-.image-section img {
+#main-header {
+    background-color: rgb(161, 16, 223); 
+    color: #fff;
+    font-size: 25px;
     max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    overflow: hidden;
 }
 
-.contact-phone {
-    font-size: 1.2em;
-    margin-top: 20px;
-}
-
-.contact-phone a {
-    color: #7D3C98;
-    text-decoration: none;
-}
-
-.contact-phone a:hover {
-    text-decoration: underline;
-}
-.image-container {
+#navbar {
+    background-color: #292929;
+    color: #fff;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px 0;
+    align-content: space-around;
+
+    p {
+        color: #ed9bf7;
+    }
 }
 
-.image-section {
-    max-width: 50%;
+#navbar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#navbar li {
+    display:inline;
+}
+
+#navbar a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+#showcase{
+    background-image: url('../images/background.png');
+    background-position: center right;
+    background-size: cover;
+    min-height: 300px;
+    margin-bottom: 20px;
     text-align: center;
 }
 
-.image-section.left {
-    text-align: left;
+#showcase h1{
+    color: #fbf2fc;
+    font-size: 50px;
+    line-height: 1.6em;
+    padding-top: 30px;
+    align-items: center;
 }
 
-.image-section.right {
-    text-align: right;
+#main {
+    float: left;
+    width: 70%;
+    padding: 0 30px;
+    box-sizing: border-box;
+    text-align: justify;
+    color: #4d4949;
+    font-size: 18px;
 }
 
-.image-section h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.image-section img {
-    border-radius: 10px;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(45deg, #7D3C98, #f7f7f7, #bb10c1);
-    background-size: 400% 400%;
-    animation: gradientAnimation 4s ease infinite;
-}
-
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
+#sidebar {
+    float: right;
+    width: 30%;
+    background: rgba(200, 107, 239, 0.3);
+    color: #fff;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    border-radius: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;s
+    a{ 
+      color: #7e098e;
+      font-size: 20px;  
     }
-    50% {
-        background-position: 100% 50%;
+
+    img {
+        max-width: 100%;
+        height: auto;
     }
-    100% {
-        background-position: 0% 50%;
+
+
+}
+
+
+
+#main-footer{
+    background-color: rgb(161, 16, 223);
+    color: #fdeefa;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+} 
+
+@media(max-width:600px){
+    #main{
+        width: 100%;
+        float:none;
+    }
+    #sidebar{
+        width: 100%;
+        float:none;
     }
 }
